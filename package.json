@@ -1,8 +1,8 @@
 {
 	"name": "webbylab",
 	"version": "1.0.0",
-	"description": "MERN APP",
 	"author": "Bohdan Petrov <mind.your.life.guide@gmail.com>",
+	"description": "MERN APP",
 	"license": "ISC",
 	"scripts": {
 		"start:client": "react-scripts start",
