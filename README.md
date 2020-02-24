@@ -7,16 +7,28 @@
 
 ### Установка
 
-    $ git clone 
-    $ cd .../client
+    $ git clone https://github.com/mindyourlifeguide/webbylab.git
+    $ cd webbylab
     $ npm install
-    $ ..cd
     $ cd server
-    $ npm install 
+    $ npm install
+    $ cd ..
+    $ cd client
+    $ npm install
+    $ cd .. 
 
 ### Запуск приложения
 
+    ### запуск с главной папки webbylab запустит и сервер и клиент
     $ npm run dev
+    
+    ### запуск по отдельности сервера и клиента
+    $ cd server
+    $ npm start
+    $ cd ..
+    $ cd client
+    $ npm start
+    
 
 
 
