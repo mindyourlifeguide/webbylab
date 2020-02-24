@@ -1,7 +1,25 @@
-# WebbyLab Films
-Это тестовое задание, в котором я познакомился с такими чудесными технологиями, как Node.js и MongoDB. 
+# WebbyLab Films 
 
-Это веб приложение для хранения информации о фильмах.
+
+ Это SPA приложение на базе стэка MERN для хранения информации о фильмах.
+ 
+ При его разработке я познакомился с такими чудесными технологиями, как Node.js и MongoDB. 
+
+### Установка
+
+    $ git clone 
+    $ cd .../client
+    $ npm install
+    $ ..cd
+    $ cd server
+    $ npm install 
+
+### Запуск приложения
+
+    $ npm run dev
+
+
+
 ### Функции приложения:
  - Добавления фильма;
  - Удаление фильма;
@@ -11,14 +29,14 @@
  - Поиск по имени актёра;
  - Импорт списка фильмов с текстового файла;
 
-### Задание реализовано:
+### Технологии:
 ##### Front-End
-**React + Material-UI**
+** [React](https://reactjs.org/) + [Material-UI](https://material-ui.com/) **
 
 Для клиентской части используется React и Material-UI.
 Изначально писал на React+Redux, но возникли сложности связывания логики и UI, после чего было принято решение переписать всё на react hooks.
 ##### Back-End
-**Express + MongoDB**
+** [Express](https://expressjs.com/) + [MongoDB](https://www.mongodb.com/) **
 
 Для серверной части используется Node.js и MongoDB, а именно фреймворк Express и Mongoose для моделирования объектов MongoDB для Node.js
 
@@ -89,3 +107,4 @@
     │   └─ ...                                    - configuration files (prettier, eslint, gitignore, etc)
     │
     └─ ...                                        - configuration files (prettier, eslint, gitignore, etc)
+    

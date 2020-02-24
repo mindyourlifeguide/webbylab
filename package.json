@@ -5,6 +5,9 @@
 	"author": "Bohdan Petrov <mind.your.life.guide@gmail.com>",
 	"license": "ISC",
 	"scripts": {
+		"start:client": "react-scripts start",
+		"start:server": "nodemon server/server.js",
+		"start": "concurrently \"cd client && npm start start:client\" \"cd server && npm start start:server\"",
 		"lint": "eslint src -c .eslintrc.json --ext js,jsx",
 		"precommit": "lint-staged",
 		"postcommit": "git update-index --again",
@@ -13,6 +16,7 @@
 	"dependencies": {},
 	"devDependencies": {
 		"babel-eslint": "^10.0.3",
+		"concurrently": "^5.1.0",
 		"eslint": "^6.7.2",
 		"eslint-config-airbnb": "^18.0.1",
 		"eslint-config-prettier": "^6.7.0",
