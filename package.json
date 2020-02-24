@@ -1,0 +1,57 @@
+{
+	"name": "webbylab",
+	"version": "1.0.0",
+	"description": "MERN APP",
+	"author": "Bohdan Petrov <mind.your.life.guide@gmail.com>",
+	"license": "ISC",
+	"scripts": {
+		"lint": "eslint src -c .eslintrc.json --ext js,jsx",
+		"precommit": "lint-staged",
+		"postcommit": "git update-index --again",
+		"prettier": "prettier --write src/"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"babel-eslint": "^10.0.3",
+		"eslint": "^6.7.2",
+		"eslint-config-airbnb": "^18.0.1",
+		"eslint-config-prettier": "^6.7.0",
+		"eslint-import-resolver-webpack": "0.12.1",
+		"eslint-plugin-flowtype": "^4.6.0",
+		"eslint-plugin-import": "2.20.1",
+		"eslint-plugin-jsx-a11y": "^6.2.3",
+		"eslint-plugin-prettier": "^3.1.1",
+		"eslint-plugin-react": "^7.17.0",
+		"eslint-plugin-react-hooks": "^2.4.0",
+		"husky": "4.2.3",
+		"lint-staged": "10.0.7",
+		"prettier": "^1.14.2"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged",
+			"post-commit": "git update-index --again"
+		}
+	},
+	"lint-staged": {
+		"src/**/*.{js,jsx,ts,tsx,json,css,scss}": [
+			"prettier --write src/",
+			"git add"
+		]
+	}
+}
