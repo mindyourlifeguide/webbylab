@@ -7,7 +7,7 @@
 
 ### Установка
 
-    $ git clone https://github.com/mindyourlifeguide/webbylab.git
+    $ git clone --recursive https://github.com/mindyourlifeguide/webbylab
     $ cd webbylab
     $ npm install
     $ cd server
