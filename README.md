@@ -120,5 +120,8 @@
     │   ├─ server.js                              - connecting to database and port
     │   └─ ...                                    - configuration files (prettier, eslint, gitignore, etc)
     │
+    ├─ test                                       - folder with test files
+    │   └─ sample_movies.txt                      - file with test films
+    │
     └─ ...                                        - configuration files (prettier, eslint, gitignore, etc)
     
