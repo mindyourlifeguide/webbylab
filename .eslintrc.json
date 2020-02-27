@@ -5,8 +5,10 @@
 		"node": true
 	},
 	"extends": ["airbnb", "prettier/react", "plugin:prettier/recommended"],
-	"plugins": ["react","prettier"],
+	"plugins": ["react","prettier","react-hooks"],
 	"rules": {
+		"react-hooks/rules-of-hooks": "error", // Проверяем правила хуков
+		"react-hooks/exhaustive-deps": "warn", // Проверяем зависимости эффекта
 //		"prettier/prettier": ["Error"],
 		"import/prefer-default-export": "off",
 		"import / no-anonymous-default-export" : [ "error" ,  {
